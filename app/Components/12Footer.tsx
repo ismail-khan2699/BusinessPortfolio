@@ -185,10 +185,10 @@ function FooterContact() {
   </div>
 </div>
 
-<div className="col-span-1 lg:col-span-5 flex flex-col lg:items-end justify-end">
+<div className="col-span-1 lg:col-span-5 flex flex-col items-end justify-end">
   <span className='p-2'>Subscribe to our weekly newsletter today!</span>
   <form className=" rounded-lg " style={{border:'1px solid #5B53F9'}}>
-    <div className="flex rounded-lg">
+    <div className="flex rounded-lg w-auto">
       <input
         type="email"
         id="UserEmail"

@@ -13,9 +13,9 @@ const Cards: React.FC<CardProps> = ({ imgSrc, heading, paragraph }) => {
         <div className='bg-purple-600 flex justify-center items-center rounded-lg z-40' style={{ height: '70px', width: '70px' }}>
           <img src={imgSrc} alt={heading} />
         </div>
-        <div className='ml-5 align-middle text-sm w-3/5 font-semibold'>{heading}</div>
+        <div className='ml-5 align-middle text-black text-sm w-3/5 font-semibold'>{heading}</div>
       </div>
-      <div className='m-5 text-xs w-full pt-5'>{paragraph}</div>
+      <div className='m-5 text-xs w-full text-gray-800 pt-5'>{paragraph}</div>
     </div>
   );
 }

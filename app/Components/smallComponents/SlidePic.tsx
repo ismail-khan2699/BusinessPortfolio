@@ -25,27 +25,27 @@ function SlidePic() {
         <div ref={sliderRef} className="keen-slider" >
           <div className="keen-slider__slide number-slide1">
                 <div>
-                <img src="/assets/rectangular1.png" alt="port" className=' rounded-lg' style={{height:'370px'}} />
-                <h2 className=' text-xl py-2'>REDESIGN OF B2B WEBSITE</h2>
-                <h3 className=' text-xs pt-2'>Web Design</h3>
+                <img src="/assets/rectangular1.png" alt="port" className=' rounded-lg' style={{height:'300px'}} />
+                <h2 className=' text-xl text-black py-2'>REDESIGN OF B2B WEBSITE</h2>
+                <h3 className=' text-xs text-gray-800 pt-2'>Web Design</h3>
                     </div>
 
 
           </div>
           <div className="keen-slider__slide number-slide1">
                 <div>
-                <img src="/assets/rectangular2.png" alt="port" className=' rounded-lg ' style={{height:'370px'}}/>
-                <h2 className=' text-xl py-2'>MOBILE APPLICATION</h2>
-                <h3 className=' text-xs pt-2'>App Development</h3>
+                <img src="/assets/rectangular2.png" alt="port" className=' rounded-lg ' style={{height:'300px'}}/>
+                <h2 className=' text-xl text-black py-2'>MOBILE APPLICATION</h2>
+                <h3 className=' text-xs text-gray-800 pt-2'>App Development</h3>
                     </div>
 
 
           </div>
           <div className="keen-slider__slide number-slide1">
                 <div>
-                <img src="/assets/rectangular3.png" alt="port" className=' rounded-lg' style={{height:'370px'}} />
-                <h2 className=' text-xl py-2'>E-COMMERCE SHOP</h2>
-                <h3 className=' text-xs pt-2'>Web Development</h3>
+                <img src="/assets/rectangular3.png" alt="port" className=' rounded-lg' style={{height:'300px'}} />
+                <h2 className=' text-xl text-black py-2'>E-COMMERCE SHOP</h2>
+                <h3 className=' text-xs text-gray-800 pt-2'>Web Development</h3>
                     </div>
 
 

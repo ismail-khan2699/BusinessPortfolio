@@ -7,8 +7,8 @@ function LatestIns() {
     <div className='w-full p-10' style={{ fontFamily: 'Montserrat, sans-serif' }}>
     <div className='flex justify-between items-end mb-2'>
       <div className='w-1/2'>
-        <p className='p-0 m-0 font-semibold'>Our Work</p>
-        <h2 className='text-base text-justify mt-4'>We don’t claim to be gurus or wizards. We’re just a super experienced, passionate team who knows how to get results for our clients. All our work is custom and thoughtfully designed, written, and developed with your business goals in mind.</h2>
+        <p className='p-0 m-0 text-black font-semibold'>Our Work</p>
+        <h2 className='text-base text-gray-800 text-justify mt-4'>We don’t claim to be gurus or wizards. We’re just a super experienced, passionate team who knows how to get results for our clients. All our work is custom and thoughtfully designed, written, and developed with your business goals in mind.</h2>
       </div>
       <div className='w-auto'>
         <a href='#' className='flexbox button ml-2 h-8' style={{ textDecoration: 'none' }}>

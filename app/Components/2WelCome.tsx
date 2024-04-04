@@ -3,8 +3,8 @@ function WelCome() {
   return (
     <div id="root" className=" flex pt-10 mb-3">
         <div className=" w-2/6">
-        <h1 className=" text-2xl font-bold ml-2 inline-block">Welcome To Web Magnetism</h1>
-        <p className=" text-xs text-justify to-gray-800" style={{minWidth:'265px'}}>Your hub for bespoke web design and digital marketing success. We seamlessly merge creativity and SEO expertise to craft visually stunning websites that magnetize audiences. <br /><br />
+        <h1 className=" text-2xl text-black font-bold ml-2 inline-block">Welcome To Web Magnetism</h1>
+        <p className=" text-xs text-justify text-gray-800" style={{minWidth:'265px'}}>Your hub for bespoke web design and digital marketing success. We seamlessly merge creativity and SEO expertise to craft visually stunning websites that magnetize audiences. <br /><br />
 Our digital marketing, from SEO mastery to impactful campaigns, ensures your brand's resonance online. At Web Magnetism, we're not just designers; we're digital architects, sculpting unique online experiences that elevate your brand. <br /><br />
 Navigate the digital landscape with confidence – choose Web Magnetism for tailored web design and strategic digital marketing, where innovation meets results for a compelling online journey.</p>
         <div>

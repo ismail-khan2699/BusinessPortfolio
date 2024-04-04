@@ -23,7 +23,7 @@ function ClintSlide() {
       return (
         <div className=' w-full flex flex-col justify-center items-center my-5'>
         <div ref={sliderRef} className="keen-slider" >
-          <div className="keen-slider__slide number-slide1">
+          <div className="keen-slider__slide number-slide1 border-2 rounded-lg">
                 <div className=' p-3 rounded-lg shadow-md flex flex-col justify-center items-center'>
                     <div className='profile-picture'>
                         <img src="/assets/p1.jpeg" alt="person1" className='face-image' />
@@ -38,7 +38,7 @@ function ClintSlide() {
           </div>
 
 
-          <div className="keen-slider__slide number-slide1">
+          <div className="keen-slider__slide number-slide1 border-2 rounded-lg">
                 <div className=' p-3 rounded-lg shadow-md flex flex-col justify-center items-center'>
                     <div className='profile-picture'>
                         <img src="/assets/p2.jpeg" alt="person1" className='face-image' />
@@ -51,7 +51,7 @@ function ClintSlide() {
                     </div>
                 </div>
           </div>
-          <div className="keen-slider__slide number-slide1">
+          <div className="keen-slider__slide number-slide1 border-2 rounded-lg">
                 <div className=' p-3 rounded-lg flex flex-col justify-center items-center'>
                     <div className='profile-picture'>
                         <img src="/assets/p3.jpeg" alt="person1" className='face-image' />
@@ -65,7 +65,7 @@ function ClintSlide() {
                 </div>
           </div>
 
-          <div className="keen-slider__slide number-slide1">
+          <div className="keen-slider__slide number-slide1 border-2 rounded-lg">
                 <div className=' p-3 rounded-lg flex flex-col justify-center items-center'>
                     <div className='profile-picture'>
                         <img src="/assets/p3.jpeg" alt="person1" className='face-image' />
@@ -73,7 +73,7 @@ function ClintSlide() {
                     <img src="/assets/stars.png" alt="rating" className='py-2' />
                     <h3 className=' text-xs text-gray-600'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, voluptatibus ea, ut sequi fugit impedit eveniet maiores, quas error atque iusto optio? Aperiam illum ab voluptatum architecto hic et laborum.</h3>
                     <div className="flex w-full justify-between mt-3">
-                        <h2 className=' text-xs '>Maria Bend, Director</h2>
+                        <h2 className=' text-black text-xs '>Maria Bend, Director</h2>
                         <a href='#' className='gradiantText text-xs '>Read More</a>
                     </div>
                 </div>
