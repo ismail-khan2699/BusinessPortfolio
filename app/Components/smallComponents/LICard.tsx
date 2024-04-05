@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
+import Link from 'next/link';
 
 function LICard() {
   const insightCardsData = [
@@ -77,7 +78,7 @@ function LICard() {
             <h3 className='p-2 text-xs text-gray-600'>{cardData.paragraph}</h3>
             <div className="p-2 mb-2 flex w-full justify-between mt-3">
                 <h2 className='text-xs'>{cardData.date}</h2>
-                <a href={cardData.readMoreLink} className=' text-black gradiantText text-xs'>Read More</a>
+                <Link href={cardData.readMoreLink} className=' text-black gradiantText text-xs'>Read More</Link>
             </div>
           </div>
         </div>

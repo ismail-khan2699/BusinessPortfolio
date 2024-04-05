@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./2WelCome.css";
 function WelCome() {
   return (
@@ -8,14 +9,14 @@ function WelCome() {
 Our digital marketing, from SEO mastery to impactful campaigns, ensures your brand's resonance online. At Web Magnetism, we're not just designers; we're digital architects, sculpting unique online experiences that elevate your brand. <br /><br />
 Navigate the digital landscape with confidence – choose Web Magnetism for tailored web design and strategic digital marketing, where innovation meets results for a compelling online journey.</p>
         <div>
-        <a href='#' className='flexbox button ml-2 mb-3 h-8' style={{textDecoration:'none',}}>
+        <Link href='#' className='flexbox button ml-2 mb-3 h-8' style={{textDecoration:'none',}}>
           <h3 className=" text-white text-xs font-thin p-2">ABOUT US</h3>
           <div style={{ height: '20px', width: '20px' }}>
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
               <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
             </svg>
           </div>
-        </a>
+        </Link>
         </div>
         </div>
         

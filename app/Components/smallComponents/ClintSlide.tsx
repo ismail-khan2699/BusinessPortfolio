@@ -4,6 +4,7 @@ import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
 import './slidepic.css'
 import Image from 'next/image';
+import Link from 'next/link'
 
 function ClintSlide() {
   const cardsData = [
@@ -94,7 +95,7 @@ function ClintSlide() {
             <h3 className='text-xs text-gray-600'>{card.text}</h3>
             <div className="flex w-full justify-between mt-3">
               <h2 className='text-xs'>{card.name}</h2>
-              <a href='#' className='gradiantText text-xs'>Read More</a>
+              <Link href='#' className='gradiantText text-xs'>Read More</Link>
             </div>
           </div>
         </div>
