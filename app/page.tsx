@@ -14,10 +14,10 @@ import FooterContact from "./Components/12Footer";
 
 export default function Home() {
   return (
-    <div style={{minWidth:'785px'}}>
+    <div>
     <IntroSection/>
 
-      <div id='welcome' style={{minWidth:'785px'}}>
+      <div id='welcome'>
       <WelCome/>
       </div>
       <div id='integrated'>

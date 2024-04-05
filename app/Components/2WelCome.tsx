@@ -1,8 +1,8 @@
 import "./2WelCome.css";
 function WelCome() {
   return (
-    <div id="root" className=" flex pt-10 mb-3">
-        <div className=" w-2/6">
+    <div id="root" className=" flex flex-col  md:flex-row pt-10 mb-3">
+        <div className=" w-2/3 sm:w-1/2 md:w-2/6">
         <h1 className=" text-2xl text-black font-bold ml-2 inline-block">Welcome To Web Magnetism</h1>
         <p className=" text-xs text-justify text-gray-800" style={{minWidth:'265px'}}>Your hub for bespoke web design and digital marketing success. We seamlessly merge creativity and SEO expertise to craft visually stunning websites that magnetize audiences. <br /><br />
 Our digital marketing, from SEO mastery to impactful campaigns, ensures your brand's resonance online. At Web Magnetism, we're not just designers; we're digital architects, sculpting unique online experiences that elevate your brand. <br /><br />
@@ -19,7 +19,7 @@ Navigate the digital landscape with confidence – choose Web Magnetism for tail
         </div>
         </div>
         
-        <div className="ml-10 mt-10"  style={{width:'380px', height:'380px'}}>
+        <div className=" md:ml-10 mt-10"  style={{width:'380px', height:'380px'}}>
             <img src="/assets/laptop.png" alt="Picture Missing" />
         </div>
     </div>

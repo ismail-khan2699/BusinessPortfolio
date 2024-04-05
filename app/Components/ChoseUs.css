@@ -15,9 +15,8 @@
     right: 0;
     height: 100px; /* Adjust the height of the curve */
     background-color: rgba(243, 242, 255, 1);/* Set the same background color as the div */
-    border-top-left-radius: 60%; /* Top border radius of 50% */
+    border-top-left-radius: 60%; 
   border-top-right-radius: 60%;
-   /* This creates a circular shape, adjust as needed */
   }
   .curve-top::after {
     content: '';
@@ -25,6 +24,7 @@
     bottom: -50px; 
     left: 0;
     right: 0;
+    z-index: -1;
 
     height: 100px; /* Adjust the height of the curve */
     background-color: rgba(243, 242, 255, 1);/* Set the same background color as the div */

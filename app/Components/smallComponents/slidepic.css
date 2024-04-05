@@ -66,10 +66,16 @@
   height: 100px; /* Adjust as needed */
   border-radius: 50%; /* Makes the frame circular */
   overflow: hidden; /* Clips the content to the rounded shape */
+  display: block;
 }
 
 .face-image {
-  width: 100%; /* Ensures the image fills the container */
-  height: auto; /* Maintains the aspect ratio */
-  object-fit: cover; /* Fits the image inside the container, preserving its aspect ratio and cropping if necessary */
+  width: 100px; /* Ensures the image fills the container */
+  height: 100px; /* Maintains the aspect ratio */
+  object-fit: cover; 
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  z-index: 10;/* Fits the image inside the container, preserving its aspect ratio and cropping if necessary */
 }

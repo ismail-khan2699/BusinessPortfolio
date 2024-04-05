@@ -7,7 +7,7 @@ const IntroSection = () => {
        <a href="#" style={{textDecoration:'none',}}>
         <div className='flexbox'>
           <img src="/assets/logo.png" alt="Logo" style={{ height: 35, width: 35 }} />
-          <p style={{color:'black'}}>WEB MAGNETISM</p>
+          <p style={{color:'black', fontSize:'25px'}}>WEB MAGNETISM</p>
         </div>
        </a>
         <a href="#" style={{textDecoration:'none',}}><img src="/assets/menu.svg" alt="menu" /></a>
