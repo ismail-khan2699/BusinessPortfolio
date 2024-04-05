@@ -70,7 +70,7 @@ function LICard() {
       <div className='flex flex-col justify-center h-auto w-11/12'>
       <div ref={sliderRef} className="keen-slider">
       {insightCardsData.map((cardData, index) => (
-        <div className='keen-slider__slide flex justify-center'>
+        <div key={index} className='keen-slider__slide flex justify-center'>
           <div key={index} style={{ width: '250px' }} className='Cradso'>
             <img src={cardData.imgSrc} alt="" className='bottom-0' />
             <h3 className='p-2 text-black font-semibold'>{cardData.heading}</h3>
