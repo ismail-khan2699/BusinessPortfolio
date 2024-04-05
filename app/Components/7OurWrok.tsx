@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 function OurWrok() {
@@ -8,12 +9,13 @@ function OurWrok() {
       
   return (
     <div className=' w-full my-5 flex justify-center items-center overflow-hidden' style={gradiant}>
-    <img src="/assets/amazonlogo.png" alt="logo" style={{height:'70px', marginLeft:'-25px'}} className='pt-3 ml-20 hover:scale-105'/>
-        <img src="/assets/Austrian.png" alt="logo" style={{height:'70px', width:'250px'}} className='ml-20 hover:scale-105'/>
-        <img src="/assets/amazonlogo.png" alt="logo" style={{height:'70px'}} className='pt-3 ml-20 hover:scale-105'/>
-        <img src="/assets/Austrian.png" alt="logo" style={{height:'70px', width:'250px'}} className='ml-20 hover:scale-105'/>
-        <img src="/assets/VectorAudio.png" alt="logo" style={{height:'70px'}} className=' ml-20 hover:scale-105'/>
-        <img src="/assets/amazonlogo.png" alt="logo" style={{height:'70px'}} className='pt-3 ml-20 hover:scale-105'/>
+    <Image src="/assets/amazonlogo.png" alt="logo" height={70} width={70} style={{ marginLeft:'-25px'}} className='pt-3 ml-20 hover:scale-105'/>
+        <Image src="/assets/Austrian.png" alt="logo" height={70} width={250} className='ml-20 hover:scale-105'/>
+    <Image src="/assets/amazonlogo.png" alt="logo" height={70} width={70} className='pt-3 ml-20 hover:scale-105'/>
+    <Image src="/assets/Austrian.png" alt="logo" height={70} width={250} className='ml-20 hover:scale-105'/>
+    <Image src="/assets/amazonlogo.png" alt="logo" height={70} width={70} className='pt-3 ml-20 hover:scale-105'/>
+    <Image src="/assets/Austrian.png" alt="logo" height={70} width={250} className='ml-20 hover:scale-105'/>
+     <Image src="/assets/amazonlogo.png" alt="logo" height={70} width={70} className='pt-3 ml-20 hover:scale-105'/>
         
     </div>
   )

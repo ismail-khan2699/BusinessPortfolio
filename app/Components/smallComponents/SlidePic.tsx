@@ -1,17 +1,51 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
 import './slidepic.css'
 
 function SlidePic() {
+  const cardData = [
+    {
+      imgSrc: "/assets/rectangular1.png",
+      title: "REDESIGN OF B2B WEBSITE",
+      category: "Web Design"
+    },
+    {
+      imgSrc: "/assets/rectangular2.png",
+      title: "MOBILE APPLICATION",
+      category: "App Development"
+    },
+    {
+      imgSrc: "/assets/rectangular3.png",
+      title: "E-COMMERCE SHOP",
+      category: "Web Development"
+    },
+    {
+      imgSrc: "/assets/rectangular1.png",
+      title: "REDESIGN OF B2B WEBSITE",
+      category: "Web Design"
+    },
+    {
+      imgSrc: "/assets/rectangular2.png",
+      title: "MOBILE APPLICATION",
+      category: "App Development"
+    },
+    {
+      imgSrc: "/assets/rectangular3.png",
+      title: "E-COMMERCE SHOP",
+      category: "Web Development"
+    },
+    // Add more card objects as needed
+  ];
     const [currentSlide, setCurrentSlide] = React.useState(0)
   const [loaded, setLoaded] = useState(false)
+  const [Perviewchange, setPerviewchange] = useState(3)
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
     slides: {
-        perView: 3,
-        spacing: 15,
+        perView: Perviewchange,
+        spacing: 10,
       },
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel)
@@ -20,36 +54,40 @@ function SlidePic() {
       setLoaded(true)
     },
   })
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setPerviewchange(3)
+      } else if(window.innerWidth>=700) {
+        setPerviewchange(2)
+      } else{
+        setPerviewchange(1)
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [instanceRef]);
+
+
       return (
         <div className=' w-full flex flex-col justify-center items-center my-5'>
         <div ref={sliderRef} className="keen-slider" >
-          <div className="keen-slider__slide number-slide1">
-                <div>
-                <img src="/assets/rectangular1.png" alt="port" className=' rounded-lg' style={{height:'300px'}} />
-                <h2 className=' text-xl text-black py-2'>REDESIGN OF B2B WEBSITE</h2>
-                <h3 className=' text-xs text-gray-800 pt-2'>Web Design</h3>
-                    </div>
-
-
+        {cardData.map((card, index) => (
+        <div key={index} className="keen-slider__slide number-slide1" style={{maxWidth:'300px'}}>
+          <div className=' flex flex-col justify-center'>
+            <img src={card.imgSrc} alt="port" className="rounded-lg w-full h-96"  />
+            <h2 className="text-xl text-black py-2">{card.title}</h2>
+            <h3 className="text-xs text-gray-800 pt-2">{card.category}</h3>
           </div>
-          <div className="keen-slider__slide number-slide1">
-                <div>
-                <img src="/assets/rectangular2.png" alt="port" className=' rounded-lg ' style={{height:'300px'}}/>
-                <h2 className=' text-xl text-black py-2'>MOBILE APPLICATION</h2>
-                <h3 className=' text-xs text-gray-800 pt-2'>App Development</h3>
-                    </div>
-
-
-          </div>
-          <div className="keen-slider__slide number-slide1">
-                <div>
-                <img src="/assets/rectangular3.png" alt="port" className=' rounded-lg' style={{height:'300px'}} />
-                <h2 className=' text-xl text-black py-2'>E-COMMERCE SHOP</h2>
-                <h3 className=' text-xs text-gray-800 pt-2'>Web Development</h3>
-                    </div>
-
-
-          </div>
+        </div>
+      ))}
         </div>
 
         {loaded && instanceRef.current && (

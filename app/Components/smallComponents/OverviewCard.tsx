@@ -10,7 +10,7 @@ interface CardProps {
 
 const Overviewcard: React.FC<CardProps> = ({ imgSrc, heading, paragraph, buttonText, link }) => {
   return (
-    <div className='w-1/4 mx-4'>
+    <div className=' w-5/6 mx-3' style={{maxWidth:'400px', minWidth:'230px'}}>
       <div className='picTure rounded-lg overflow-hidden bg-black'>
         <img src={imgSrc} alt="img" className="object-cover h-full w-full" />
       </div>

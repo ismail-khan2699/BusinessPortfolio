@@ -11,6 +11,7 @@ function ServiceOv() {
     <div style={FontClass} className='flex justify-center items-center flex-col my-7'>
         <p>Overview Of Services</p>
         <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center'>
         <Overviewcard
         imgSrc="/assets/laptop2.png"
         heading="Bespoke Web Design"
@@ -18,6 +19,8 @@ function ServiceOv() {
         buttonText="Bespoke Web Design"
         link="#"
         />
+        </div>
+        <div className=' hidden md:block  justify-center items-center'>
         <Overviewcard
         imgSrc="/assets/Mobile.png"
         heading="App Development"
@@ -25,6 +28,9 @@ function ServiceOv() {
         buttonText="App Development"
         link="#"
         />
+        </div>
+        <div className=' hidden sm:block justify-center items-center'>
+
         <Overviewcard
         imgSrc="/assets/laptop3.png"
         heading="Digital Marketing"
@@ -32,6 +38,7 @@ function ServiceOv() {
         buttonText="Digital Marketing"
         link="#"
         />  
+        </div>
         </div>
 
     </div>
