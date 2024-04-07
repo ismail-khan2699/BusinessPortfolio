@@ -8,7 +8,7 @@ function ServiceOv() {
       };
       
   return (
-    <div style={FontClass} className='flex justify-center items-center flex-col my-7'>
+    <div style={FontClass} className='flex justify-center text-black items-center flex-col my-7'>
         <p>Overview Of Services</p>
         <div className='flex justify-center items-center'>
         <div className='flex justify-center items-center'>

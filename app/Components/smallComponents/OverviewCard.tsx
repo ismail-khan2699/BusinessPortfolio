@@ -15,7 +15,7 @@ const Overviewcard: React.FC<CardProps> = ({ imgSrc, heading, paragraph, buttonT
       <div className='picTure rounded-lg overflow-hidden bg-black'>
         <img src={imgSrc} alt="img" className="object-cover h-full w-full" />
       </div>
-      <h2 className='text-xl py-5 font-semibold'>{heading}</h2>
+      <h2 className='text-xl py-5 text-black font-semibold'>{heading}</h2>
       <h3 className='text-sm text-gray-700'>{paragraph}</h3>
       <Link href={link} className='flexbox butonOv mb-3 h-8' style={{ textDecoration: 'none' }}>
         <h3 className="text-xs text-black font-thin p-2">{buttonText}</h3>

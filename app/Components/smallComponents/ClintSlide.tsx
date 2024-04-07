@@ -79,7 +79,7 @@ function ClintSlide() {
 
 
       return (
-        <div className=' w-full flex flex-col justify-center items-center my-5'>
+        <div className=' w-full flex flex-col justify-center items-center overflow-hidden my-5'>
         <div ref={sliderRef} className="keen-slider" >
         {cardsData.map((card, index) => (
         <div key={index} className="keen-slider__slide number-slide1 border-2 rounded-lg">

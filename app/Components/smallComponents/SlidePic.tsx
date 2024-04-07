@@ -77,7 +77,7 @@ function SlidePic() {
 
 
       return (
-        <div className=' w-full flex flex-col justify-center items-center my-5'>
+        <div className=' w-full flex flex-col justify-center items-center overflow-hidden my-5'>
         <div ref={sliderRef} className="keen-slider" >
         {cardData.map((card, index) => (
         <div key={index} className="keen-slider__slide number-slide1" style={{maxWidth:'300px'}}>

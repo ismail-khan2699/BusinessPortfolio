@@ -20,9 +20,7 @@ function FooterContact() {
     { name: 'Web Design', href: '#' },
     { name: 'Web Redesign', href: '#' },
     { name: 'UI/UX Design', href: '#' },
-    { name: 'Conversion Rate Optimization', href: '#' },
     { name: 'Brand Indentity and Logo', href: '#' },
-    { name: 'App Development', href: '#' },
   ];
   return (
     <div>
@@ -57,18 +55,18 @@ function FooterContact() {
   <div>
     <h3 className="font-semibold text-lg pt-2 text-gray-200">Digital Marketing</h3>
     {marketingServices && marketingServices.map(service => (
-  <>
+  <div className='mt-2'>
     <Link href={service.href} className="text-gray-400 font-extralight equal-height text-base">{service.name}</Link><br />
-  </>
+  </div>
 ))}
 
   </div>
   <div className='m-4'>
     <h3 className="font-semibold text-lg text-gray-200">Bespoke Web Design</h3>
     {beSpokeWebDesign && beSpokeWebDesign.map(service => (
-  <>
+  <div className='my-2'>
     <Link href={service.href} className="text-gray-400 font-extralight equal-height text-base">{service.name}</Link><br />
-  </>
+  </div>
 ))}
     <Link href="#" className="font-semibold text-lg text-gray-200">App Development</Link>
   </div>

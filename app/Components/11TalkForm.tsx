@@ -2,7 +2,7 @@ import React from 'react'
 
 function TalkForm() {
   return (
-    <div className=' TalkFormC' style={{width:'100%', display:'block', fontFamily:'Montserrat, sans-serif'}} >
+    <div className=' TalkFormC' style={{width:'100%', minWidth:'100px', display:'block', fontFamily:'Montserrat, sans-serif'}} >
       <div className='lg:flex lg:justify-between  w-full py-10'>
         <div className=' lg:w-5/12 p-5 md:pl-10 lg:pl-20'>
           <p className=' p-0 m-0 text-black'>Let’s talk about your project</p>

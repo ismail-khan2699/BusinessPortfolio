@@ -68,7 +68,7 @@ function LICard() {
   }, [instanceRef]);
 
   return (
-      <div className='flex flex-col justify-center h-auto w-11/12'>
+      <div className='flex flex-col justify-center overflow-hidden h-auto w-11/12'>
       <div ref={sliderRef} className="keen-slider">
       {insightCardsData.map((cardData, index) => (
         <div key={index} className='keen-slider__slide flex justify-center'>
