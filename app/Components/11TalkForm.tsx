@@ -18,7 +18,7 @@ function TalkForm() {
              <input type="tel" className='w-full border-2 h-12 rounded-lg p-2 my-2' placeholder="Phone No."/>
              <div className="flex items-center w-full border-2 h-12 rounded-lg p-2 my-2 relative">
   <label htmlFor="brief" className="text-sm text-gray-500" style={{ width: '74%' }}>Send us your brief:</label>
-  <input type="file" id="brief" style={{ width: '26%', color: 'transparent' }} />
+  <input type="file" id="brief" style={{ width: '30%', color: 'transparent' }} />
 </div>
              <textarea className='w-full border-2 h-24 rounded-lg p-2 my-2' placeholder="Message"></textarea>
              <div className="flex items-center">
