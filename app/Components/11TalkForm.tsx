@@ -2,14 +2,14 @@ import React from 'react'
 
 function TalkForm() {
   return (
-    <div className=' TalkFormC' style={{width:'100%', minWidth:'100px', display:'block', fontFamily:'Montserrat, sans-serif'}} >
+    <div className=' TalkFormC' style={{width:'100%', fontFamily:'Montserrat, sans-serif'}} >
       <div className='lg:flex lg:justify-between  w-full py-10'>
         <div className=' lg:w-5/12 p-5 md:pl-10 lg:pl-20'>
           <p className=' p-0 m-0 text-black'>Let’s talk about your project</p>
           <h3 className=' text-sm text-gray-600 pt-4 w-2/3'>Do you have a project in mind, that you feel our approach would work well for? <br /><br /> We’re always happy to discuss your project with you and put together a free proposal.</h3>
         </div>
         <div className='  my-3  w-full sm:p-5 md:pl-10 sm:w-11/12 md:w-4/6 lg:w-7/12 max-lg:items-end'>
-          <div className=' bg-white sm:rounded-xl lg:mr-10 p-5 lg:p-20' style={{height:'700px', minWidth:'480px'}}>
+          <div className=' bg-white sm:rounded-xl lg:mr-10 p-5 lg:p-20' style={{height:'700px'}}>
             <h2 className=' text-black font-semibold text-lg'> Just fill out the form below  to get started.</h2>
             <form action="Message" className='flex flex-col mt-3'>
              <input type="text" className='w-full border-2 h-12 rounded-lg p-2 my-2' placeholder="Name"/>
